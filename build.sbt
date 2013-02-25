@@ -10,4 +10,6 @@ libraryDependencies += "io.spray" % "spray-routing" % "1.1-M7"
 
 libraryDependencies += "io.spray" % "spray-can" % "1.1-M7"
 
-libraryDependencies += "com.typesafe.akka" % "akka-actor_2.10" % "2.1.0"
+libraryDependencies += "io.spray" %%  "spray-json" % "1.2.3"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.1.0"
