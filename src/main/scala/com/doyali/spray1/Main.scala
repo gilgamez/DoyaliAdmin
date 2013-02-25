@@ -11,12 +11,20 @@ object Main extends App with SimpleRoutingApp {
         }
       }
     } ~
-      path("photo") {
-        path("all") {} ~
-          pathPrefix("order" / IntNumber) {
-            orderId =>
-              path("") {}
+    pathPrefix("photo") {
+      path("all") {
+        complete {
+          <ul>
+            <li>IMG_31001.jpg</li>
+          </ul>
+        }
+
+      } ~
+      path("id" / PathElement) { id =>
+          complete {
+            "{" + id + "}"
           }
+        }
       }
   }
 }
