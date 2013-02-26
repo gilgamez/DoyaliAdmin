@@ -1,4 +1,4 @@
-name := "hello"
+name := "DoyaliAdmin"
 
 version := "1.0"
 
